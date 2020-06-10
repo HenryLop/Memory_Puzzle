@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="415.0" prefWidth="458.0" style="-fx-background-color: white;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PrincipalController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="415.0" prefWidth="223.0">
+         <children> 
+             <Button fx:id="button_play" contentDisplay="CENTER" defaultButton="true" onAction="#showPlayScene" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" styleClass="button_menu" stylesheets="@style.css" text="Play" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bauhaus 93" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="button_exit" cancelButton="true" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" styleClass="button_menu" stylesheets="@style.css" text="Exit">
+               <font>
+                  <Font name="Bauhaus 93" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
